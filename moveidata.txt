@@ -1,0 +1,242 @@
+ 1.db.moveis.find({},{"media":1}).pretty();
+{
+        "_id" : ObjectId("60d9fd749ab219d870c7652b"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt2250912/mediaindex?ref_=tt_sa_1"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/title/tt2250912/videogallery/?ref_=tt_ov_vi_sm"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9fdeb9ab219d870c7652c"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt2250912/mediaindex?ref_=tt_sa_1"
+                },
+                {
+                        "type" : "video",
+                        "url" : [
+                                "https://www.imdb.com/title/tt9777666/videogallery/?ref_=tt_ov_vi_sm"
+                        ]
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9fe559ab219d870c7652d"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt6654210/mediaindex?ref_=tt_sa_1"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi758497305?ref_=ttvi_vi_imdb_1"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9fe709ab219d870c7652e"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt5433138/mediaindex?ref_=tt_sa_1"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/title/tt5433138/videogallery/?ref_=tt_ov_vi_sm"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9fe879ab219d870c7652f"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt0993840/mediaindex?ref_=tt_sa_1"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/title/tt0993840/videogallery/?ref_=tt_ov_vi_sm"
+                }
+        ]
+}
+2.db.moveis.find({},{"media":1},{"review":1}).pretty();
+{
+        "_id" : ObjectId("60d9fd749ab219d870c7652b"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt2250912/mediaindex?ref_=tt_sa_1"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/title/tt2250912/videogallery/?ref_=tt_ov_vi_sm"
+                }
+        ]
+        "review" : [
+                {
+                        "username" : "smita",
+                        "review_type" : "excellent"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9fdeb9ab219d870c7652c"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt2250912/mediaindex?ref_=tt_sa_1"
+                },
+                {
+                        "type" : "video",
+                        "url" : [
+                                "https://www.imdb.com/title/tt9777666/videogallery/?ref_=tt_ov_vi_sm"
+                        ]
+                }
+        ]
+  "review" : [
+                {
+                        "username" : "snigdha",
+                        "review_type" : "very good"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9fe559ab219d870c7652d"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt6654210/mediaindex?ref_=tt_sa_1"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/video/vi758497305?ref_=ttvi_vi_imdb_1"
+                }
+        ]
+"review" : [
+                {
+                        "username" : "sia",
+                        "review_type" : "excellent"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9fe709ab219d870c7652e"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt5433138/mediaindex?ref_=tt_sa_1"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/title/tt5433138/videogallery/?ref_=tt_ov_vi_sm"
+                }
+        ]
+ "review" : [
+                {
+                        "username" : "sia",
+                        "review_type" : "excellent"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9fe879ab219d870c7652f"),
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt0993840/mediaindex?ref_=tt_sa_1"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/title/tt0993840/videogallery/?ref_=tt_ov_vi_sm"
+                }
+        ]
+    "review" : [
+                {
+                        "username" : "smita",
+                        "review_type" : "good"
+                }
+        ]
+}
+3.db.moveis.find({"actor.name":"Dave Bautista"}).pretty();   
+{
+        "_id" : ObjectId("60d9fe879ab219d870c7652f"),
+        "movei_id" : 5,
+        "name" : "Army of the Dead",
+        "Genre" : [
+                "Drama",
+                "Sci-Fi"
+        ],
+        "review" : [
+                {
+                        "username" : "smita",
+                        "review_type" : "good"
+                }
+        ],
+        "actor" : [
+                {
+                        "name" : "Dave Bautista",
+                        "role" : "hero",
+                        "skill" : [
+                                "singing"
+                        ],
+                        "name_in_movei" : [
+                                "ram"
+                        ]
+                }
+        ],
+        "media" : [
+                {
+                        "type" : "image",
+                        "url" : "https://www.imdb.com/title/tt0993840/mediaindex?ref_=tt_sa_1"
+                },
+                {
+                        "type" : "video",
+                        "url" : "https://www.imdb.com/title/tt0993840/videogallery/?ref_=tt_ov_vi_sm"
+                }
+        ]
+}
+4.db.moveis.find({"review.username":"sia"},{"review.review_type.$":1}).pretty();    
+{
+        "_id" : ObjectId("60d9fe559ab219d870c7652d"),
+        "review" : [
+                {
+                        "review_type" : "ok"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("60d9fe709ab219d870c7652e"),
+        "review" : [
+                {
+                        "review_type" : "excellent"
+                }
+        ]
+}
+5.db.moveis.find({"actor.name":"Mark"},{"actor.skill.$":1}).pretty();       
+{
+        "_id" : ObjectId("60d9fe559ab219d870c7652d"),
+        "actor" : [
+                {
+                        "skill" : [
+                                "acting",
+                                "singing"
+                        ]
+                }
+        ]
+}
+6.db.moveis.find({"actor.name":"Chris Pratt"},{"actor.role.$":1}).pretty();     
+{
+        "_id" : ObjectId("60d9fdeb9ab219d870c7652c"),
+        "actor" : [
+                {
+                        "role" : "villian"
+                }
+        ]
+}
